@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CE7BDF61F47923300F51B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BDF51F47923300F51B18 /* AppDelegate.swift */; };
+		3CE7BDF81F47923300F51B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BDF71F47923300F51B18 /* ViewController.swift */; };
+		3CE7BDFB1F47923300F51B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE7BDF91F47923300F51B18 /* Main.storyboard */; };
+		3CE7BDFE1F47923300F51B18 /* Explomin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BDFC1F47923300F51B18 /* Explomin.xcdatamodeld */; };
+		3CE7BE001F47923300F51B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE7BDFF1F47923300F51B18 /* Assets.xcassets */; };
+		3CE7BE031F47923400F51B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE7BE011F47923400F51B18 /* LaunchScreen.storyboard */; };
+		3CE7BE0E1F47923400F51B18 /* ExplominTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BE0D1F47923400F51B18 /* ExplominTests.swift */; };
+		3CE7BE191F47923400F51B18 /* ExplominUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BE181F47923400F51B18 /* ExplominUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CE7BE0A1F47923400F51B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CE7BDEA1F47923300F51B18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CE7BDF11F47923300F51B18;
+			remoteInfo = Explomin;
+		};
+		3CE7BE151F47923400F51B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CE7BDEA1F47923300F51B18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CE7BDF11F47923300F51B18;
+			remoteInfo = Explomin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CE7BDF21F47923300F51B18 /* Explomin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Explomin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE7BDF51F47923300F51B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CE7BDF71F47923300F51B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CE7BDFA1F47923300F51B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CE7BDFD1F47923300F51B18 /* Explomin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Explomin.xcdatamodel; sourceTree = "<group>"; };
+		3CE7BDFF1F47923300F51B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CE7BE021F47923400F51B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CE7BE041F47923400F51B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE7BE091F47923400F51B18 /* ExplominTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExplominTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE7BE0D1F47923400F51B18 /* ExplominTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplominTests.swift; sourceTree = "<group>"; };
+		3CE7BE0F1F47923400F51B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE7BE141F47923400F51B18 /* ExplominUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExplominUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE7BE181F47923400F51B18 /* ExplominUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplominUITests.swift; sourceTree = "<group>"; };
+		3CE7BE1A1F47923400F51B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CE7BDEF1F47923300F51B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE7BE061F47923400F51B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE7BE111F47923400F51B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CE7BDE91F47923300F51B18 = {
+			isa = PBXGroup;
+			children = (
+				3CE7BDF41F47923300F51B18 /* Explomin */,
+				3CE7BE0C1F47923400F51B18 /* ExplominTests */,
+				3CE7BE171F47923400F51B18 /* ExplominUITests */,
+				3CE7BDF31F47923300F51B18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CE7BDF31F47923300F51B18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7BDF21F47923300F51B18 /* Explomin.app */,
+				3CE7BE091F47923400F51B18 /* ExplominTests.xctest */,
+				3CE7BE141F47923400F51B18 /* ExplominUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CE7BDF41F47923300F51B18 /* Explomin */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7BDF51F47923300F51B18 /* AppDelegate.swift */,
+				3CE7BDF71F47923300F51B18 /* ViewController.swift */,
+				3CE7BDF91F47923300F51B18 /* Main.storyboard */,
+				3CE7BDFF1F47923300F51B18 /* Assets.xcassets */,
+				3CE7BE011F47923400F51B18 /* LaunchScreen.storyboard */,
+				3CE7BE041F47923400F51B18 /* Info.plist */,
+				3CE7BDFC1F47923300F51B18 /* Explomin.xcdatamodeld */,
+			);
+			path = Explomin;
+			sourceTree = "<group>";
+		};
+		3CE7BE0C1F47923400F51B18 /* ExplominTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7BE0D1F47923400F51B18 /* ExplominTests.swift */,
+				3CE7BE0F1F47923400F51B18 /* Info.plist */,
+			);
+			path = ExplominTests;
+			sourceTree = "<group>";
+		};
+		3CE7BE171F47923400F51B18 /* ExplominUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7BE181F47923400F51B18 /* ExplominUITests.swift */,
+				3CE7BE1A1F47923400F51B18 /* Info.plist */,
+			);
+			path = ExplominUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CE7BDF11F47923300F51B18 /* Explomin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE7BE1D1F47923400F51B18 /* Build configuration list for PBXNativeTarget "Explomin" */;
+			buildPhases = (
+				3CE7BDEE1F47923300F51B18 /* Sources */,
+				3CE7BDEF1F47923300F51B18 /* Frameworks */,
+				3CE7BDF01F47923300F51B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Explomin;
+			productName = Explomin;
+			productReference = 3CE7BDF21F47923300F51B18 /* Explomin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CE7BE081F47923400F51B18 /* ExplominTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE7BE201F47923400F51B18 /* Build configuration list for PBXNativeTarget "ExplominTests" */;
+			buildPhases = (
+				3CE7BE051F47923400F51B18 /* Sources */,
+				3CE7BE061F47923400F51B18 /* Frameworks */,
+				3CE7BE071F47923400F51B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CE7BE0B1F47923400F51B18 /* PBXTargetDependency */,
+			);
+			name = ExplominTests;
+			productName = ExplominTests;
+			productReference = 3CE7BE091F47923400F51B18 /* ExplominTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CE7BE131F47923400F51B18 /* ExplominUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE7BE231F47923400F51B18 /* Build configuration list for PBXNativeTarget "ExplominUITests" */;
+			buildPhases = (
+				3CE7BE101F47923400F51B18 /* Sources */,
+				3CE7BE111F47923400F51B18 /* Frameworks */,
+				3CE7BE121F47923400F51B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CE7BE161F47923400F51B18 /* PBXTargetDependency */,
+			);
+			name = ExplominUITests;
+			productName = ExplominUITests;
+			productReference = 3CE7BE141F47923400F51B18 /* ExplominUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CE7BDEA1F47923300F51B18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Daniel López";
+				TargetAttributes = {
+					3CE7BDF11F47923300F51B18 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					3CE7BE081F47923400F51B18 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3CE7BDF11F47923300F51B18;
+					};
+					3CE7BE131F47923400F51B18 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3CE7BDF11F47923300F51B18;
+					};
+				};
+			};
+			buildConfigurationList = 3CE7BDED1F47923300F51B18 /* Build configuration list for PBXProject "Explomin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CE7BDE91F47923300F51B18;
+			productRefGroup = 3CE7BDF31F47923300F51B18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CE7BDF11F47923300F51B18 /* Explomin */,
+				3CE7BE081F47923400F51B18 /* ExplominTests */,
+				3CE7BE131F47923400F51B18 /* ExplominUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CE7BDF01F47923300F51B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE7BE031F47923400F51B18 /* LaunchScreen.storyboard in Resources */,
+				3CE7BE001F47923300F51B18 /* Assets.xcassets in Resources */,
+				3CE7BDFB1F47923300F51B18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE7BE071F47923400F51B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE7BE121F47923400F51B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CE7BDEE1F47923300F51B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE7BDF81F47923300F51B18 /* ViewController.swift in Sources */,
+				3CE7BDF61F47923300F51B18 /* AppDelegate.swift in Sources */,
+				3CE7BDFE1F47923300F51B18 /* Explomin.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE7BE051F47923400F51B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE7BE0E1F47923400F51B18 /* ExplominTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE7BE101F47923400F51B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE7BE191F47923400F51B18 /* ExplominUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CE7BE0B1F47923400F51B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CE7BDF11F47923300F51B18 /* Explomin */;
+			targetProxy = 3CE7BE0A1F47923400F51B18 /* PBXContainerItemProxy */;
+		};
+		3CE7BE161F47923400F51B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CE7BDF11F47923300F51B18 /* Explomin */;
+			targetProxy = 3CE7BE151F47923400F51B18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CE7BDF91F47923300F51B18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CE7BDFA1F47923300F51B18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CE7BE011F47923400F51B18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CE7BE021F47923400F51B18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CE7BE1B1F47923400F51B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CE7BE1C1F47923400F51B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CE7BE1E1F47923400F51B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Explomin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = danlopgil.Explomin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3CE7BE1F1F47923400F51B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Explomin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = danlopgil.Explomin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3CE7BE211F47923400F51B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExplominTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = danlopgil.ExplominTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Explomin.app/Explomin";
+			};
+			name = Debug;
+		};
+		3CE7BE221F47923400F51B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExplominTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = danlopgil.ExplominTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Explomin.app/Explomin";
+			};
+			name = Release;
+		};
+		3CE7BE241F47923400F51B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ExplominUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = danlopgil.ExplominUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Explomin;
+			};
+			name = Debug;
+		};
+		3CE7BE251F47923400F51B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ExplominUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = danlopgil.ExplominUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Explomin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CE7BDED1F47923300F51B18 /* Build configuration list for PBXProject "Explomin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE7BE1B1F47923400F51B18 /* Debug */,
+				3CE7BE1C1F47923400F51B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CE7BE1D1F47923400F51B18 /* Build configuration list for PBXNativeTarget "Explomin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE7BE1E1F47923400F51B18 /* Debug */,
+				3CE7BE1F1F47923400F51B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3CE7BE201F47923400F51B18 /* Build configuration list for PBXNativeTarget "ExplominTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE7BE211F47923400F51B18 /* Debug */,
+				3CE7BE221F47923400F51B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3CE7BE231F47923400F51B18 /* Build configuration list for PBXNativeTarget "ExplominUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE7BE241F47923400F51B18 /* Debug */,
+				3CE7BE251F47923400F51B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3CE7BDFC1F47923300F51B18 /* Explomin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3CE7BDFD1F47923300F51B18 /* Explomin.xcdatamodel */,
+			);
+			currentVersion = 3CE7BDFD1F47923300F51B18 /* Explomin.xcdatamodel */;
+			path = Explomin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3CE7BDEA1F47923300F51B18 /* Project object */;
+}
