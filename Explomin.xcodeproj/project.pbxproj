@@ -7,6 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B441366D7BB469F9F534944 /* Pods_Explomin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03FC5B4D017B8A1B4585B /* Pods_Explomin.framework */; };
+		3C18CC6A1F7A129200400276 /* DetailForm VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18CC691F7A129200400276 /* DetailForm VC.swift */; };
+		3C18CC6C1F7A1F2B00400276 /* SupAditivos VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18CC6B1F7A1F2B00400276 /* SupAditivos VC.swift */; };
+		3C18CC6E1F7A1F4800400276 /* SupMateriales VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18CC6D1F7A1F4800400276 /* SupMateriales VC.swift */; };
+		3C18CC701F7A1F5F00400276 /* SupActividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18CC6F1F7A1F5F00400276 /* SupActividades.swift */; };
+		3C18CC721F7A1F7100400276 /* SupMuestras VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18CC711F7A1F7100400276 /* SupMuestras VC.swift */; };
+		3C18CC741F7A1F8700400276 /* SupBrocas VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18CC731F7A1F8700400276 /* SupBrocas VC.swift */; };
+		3C18CC761F7A1F9C00400276 /* SupAccesorios VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18CC751F7A1F9C00400276 /* SupAccesorios VC.swift */; };
+		3C3E2FB41F689F4900553329 /* AdminPop2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FB31F689F4900553329 /* AdminPop2ViewController.swift */; };
+		3C3E2FB61F68A9CB00553329 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FB51F68A9CB00553329 /* MyTableViewCell.swift */; };
+		3C3E2FB81F69125A00553329 /* My2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FB71F69125900553329 /* My2TableViewCell.swift */; };
+		3C3E2FBA1F691D3700553329 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FB91F691D3700553329 /* ModulesViewController.swift */; };
+		3C3E2FBC1F69E04B00553329 /* LoginAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FBB1F69E04A00553329 /* LoginAdminViewController.swift */; };
+		3C3E2FBE1F69E09A00553329 /* LoginSupervisorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FBD1F69E09A00553329 /* LoginSupervisorViewController.swift */; };
+		3C3E2FC01F69E0B900553329 /* LoginClienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FBF1F69E0B900553329 /* LoginClienteViewController.swift */; };
+		3C3E2FC21F6A05C300553329 /* FormularioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FC11F6A05C200553329 /* FormularioViewController.swift */; };
+		3C3E2FC61F6A2A6400553329 /* ProyectosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FC51F6A2A6400553329 /* ProyectosTableViewCell.swift */; };
+		3C3E2FC81F6A616900553329 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FC71F6A616800553329 /* DatabaseService.swift */; };
+		3C3E2FCA1F6A6A3800553329 /* Proyecto1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E2FC91F6A6A3800553329 /* Proyecto1Cell.swift */; };
+		3C45FE6F1F77425400ABF457 /* Materiales VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE6E1F77425400ABF457 /* Materiales VC.swift */; };
+		3C45FE711F77461D00ABF457 /* MaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE701F77461D00ABF457 /* MaterialCell.swift */; };
+		3C45FE731F77488700ABF457 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE721F77488700ABF457 /* Material.swift */; };
+		3C45FE751F7760C800ABF457 /* Actividades VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE741F7760C700ABF457 /* Actividades VC.swift */; };
+		3C45FE771F7760FC00ABF457 /* ActividadesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE761F7760FC00ABF457 /* ActividadesCell.swift */; };
+		3C45FE791F77A79800ABF457 /* Accesorios VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE781F77A79800ABF457 /* Accesorios VC.swift */; };
+		3C45FE7B1F77A8B500ABF457 /* AccesorioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE7A1F77A8B500ABF457 /* AccesorioCell.swift */; };
+		3C7F9C981F7A43DA007164D6 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F9C971F7A43D9007164D6 /* TestVC.swift */; };
+		3C7F9C9B1F7A71DC007164D6 /* ClienteProAdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F9C9A1F7A71DC007164D6 /* ClienteProAdminVC.swift */; };
+		3C89E4B81F60A2A800011409 /* Admin3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89E4B71F60A2A800011409 /* Admin3ViewController.swift */; };
+		3CC4B0AC1F7956F00091605F /* SupervisorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4B0AB1F7956F00091605F /* SupervisorCell.swift */; };
+		3CC7A2661F5EAC3500E407E1 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A2651F5EAC3500E407E1 /* AdminViewController.swift */; };
+		3CC7A2681F5EAEE500E407E1 /* Admin2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A2671F5EAEE500E407E1 /* Admin2ViewController.swift */; };
+		3CCD48671F6AF8CD000C7CEB /* ProyAdmSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD48661F6AF8CD000C7CEB /* ProyAdmSnapshot.swift */; };
+		3CCD486A1F6D2F25000C7CEB /* BrocaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD48691F6D2F24000C7CEB /* BrocaViewController.swift */; };
+		3CCD486D1F6D46AD000C7CEB /* Broca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD486C1F6D46AD000C7CEB /* Broca.swift */; };
+		3CCD486F1F6D4F0D000C7CEB /* MuestrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD486E1F6D4F0D000C7CEB /* MuestrasViewController.swift */; };
+		3CCD48711F6D55BB000C7CEB /* Corrida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD48701F6D55BB000C7CEB /* Corrida.swift */; };
+		3CCD48731F6D5911000C7CEB /* CorridaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD48721F6D5911000C7CEB /* CorridaCell.swift */; };
+		3CCD48751F6DC66C000C7CEB /* AditivoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD48741F6DC66B000C7CEB /* AditivoViewController.swift */; };
+		3CD6E2BC1F6F3B3F007FAF05 /* Aditivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2BB1F6F3B3F007FAF05 /* Aditivo.swift */; };
+		3CD6E2BE1F6F82F8007FAF05 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2BD1F6F82F7007FAF05 /* Variables.swift */; };
+		3CD6E2C01F6FD8A9007FAF05 /* ListaPerforistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2BF1F6FD8A9007FAF05 /* ListaPerforistasViewController.swift */; };
+		3CD6E2C21F6FDBC3007FAF05 /* PerforistaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2C11F6FDBC3007FAF05 /* PerforistaCell.swift */; };
+		3CD6E2C41F701484007FAF05 /* ListaEquipoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2C31F701483007FAF05 /* ListaEquipoViewController.swift */; };
+		3CD6E2C61F701A1F007FAF05 /* ListaEquipoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2C51F701A1F007FAF05 /* ListaEquipoCell.swift */; };
+		3CD6E2C81F711114007FAF05 /* Perforista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2C71F711114007FAF05 /* Perforista.swift */; };
+		3CD6E2CA1F72484A007FAF05 /* SupervisorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2C91F72484A007FAF05 /* SupervisorViewController.swift */; };
+		3CD6E2CC1F724ADE007FAF05 /* ClienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2CB1F724ADE007FAF05 /* ClienteViewController.swift */; };
+		3CD6E2CE1F7318A6007FAF05 /* AdminFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2CD1F7318A6007FAF05 /* AdminFormVC.swift */; };
+		3CD6E2D01F731901007FAF05 /* AdminUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2CF1F731901007FAF05 /* AdminUserVC.swift */; };
+		3CD6E2D21F731922007FAF05 /* AdminMachVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2D11F731922007FAF05 /* AdminMachVC.swift */; };
+		3CD6E2D41F731946007FAF05 /* AdminProjVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2D31F731946007FAF05 /* AdminProjVC.swift */; };
+		3CD6E2D61F73385E007FAF05 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2D51F73385D007FAF05 /* Usuario.swift */; };
+		3CD6E2D81F733CDA007FAF05 /* UsuarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2D71F733CDA007FAF05 /* UsuarioCell.swift */; };
+		3CD6E2DA1F7385A0007FAF05 /* MaquinaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2D91F73859F007FAF05 /* MaquinaCell.swift */; };
+		3CD6E2DC1F738C26007FAF05 /* Proyecto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2DB1F738C25007FAF05 /* Proyecto.swift */; };
+		3CD6E2DE1F738DC3007FAF05 /* ProyectoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2DD1F738DC3007FAF05 /* ProyectoCell.swift */; };
+		3CD6E2E21F746D53007FAF05 /* ProyectoAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2E11F746D53007FAF05 /* ProyectoAdmin.swift */; };
+		3CD6E2E41F7499B6007FAF05 /* PerforistaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2E31F7499B6007FAF05 /* PerforistaVC.swift */; };
+		3CD6E2E61F74A9FF007FAF05 /* Perforista2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2E51F74A9FF007FAF05 /* Perforista2VC.swift */; };
+		3CE04C291F78DBBF00327A2D /* FormularioSup VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE04C281F78DBBF00327A2D /* FormularioSup VC.swift */; };
+		3CE04C2B1F78FC6D00327A2D /* AditivoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE04C2A1F78FC6A00327A2D /* AditivoCell.swift */; };
+		3CE707EF1F7A820700D47872 /* ProyClienteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE707EE1F7A820700D47872 /* ProyClienteCell.swift */; };
 		3CE7BDF61F47923300F51B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BDF51F47923300F51B18 /* AppDelegate.swift */; };
 		3CE7BDF81F47923300F51B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BDF71F47923300F51B18 /* ViewController.swift */; };
 		3CE7BDFB1F47923300F51B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE7BDF91F47923300F51B18 /* Main.storyboard */; };
@@ -15,6 +78,10 @@
 		3CE7BE031F47923400F51B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE7BE011F47923400F51B18 /* LaunchScreen.storyboard */; };
 		3CE7BE0E1F47923400F51B18 /* ExplominTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BE0D1F47923400F51B18 /* ExplominTests.swift */; };
 		3CE7BE191F47923400F51B18 /* ExplominUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BE181F47923400F51B18 /* ExplominUITests.swift */; };
+		3CE7BE271F47A1B900F51B18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CE7BE261F47A1B900F51B18 /* GoogleService-Info.plist */; };
+		3CE7BE2D1F4CF0EF00F51B18 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7BE2C1F4CF0EF00F51B18 /* LoginViewController.swift */; };
+		40885EFBCEE604F55D244089 /* Pods_ExplominUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BA9FEA35B7FF01E8087A89 /* Pods_ExplominUITests.framework */; };
+		C670C06667DA3EB403340C63 /* Pods_ExplominTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14345664724C149C29B08BB2 /* Pods_ExplominTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +102,71 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1248C92FD05660364D63E782 /* Pods-Explomin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explomin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Explomin/Pods-Explomin.release.xcconfig"; sourceTree = "<group>"; };
+		14345664724C149C29B08BB2 /* Pods_ExplominTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExplominTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		193CD530064459B9B758D3FB /* Pods-ExplominUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExplominUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExplominUITests/Pods-ExplominUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C18CC691F7A129200400276 /* DetailForm VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetailForm VC.swift"; sourceTree = "<group>"; };
+		3C18CC6B1F7A1F2B00400276 /* SupAditivos VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SupAditivos VC.swift"; sourceTree = "<group>"; };
+		3C18CC6D1F7A1F4800400276 /* SupMateriales VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SupMateriales VC.swift"; sourceTree = "<group>"; };
+		3C18CC6F1F7A1F5F00400276 /* SupActividades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupActividades.swift; sourceTree = "<group>"; };
+		3C18CC711F7A1F7100400276 /* SupMuestras VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SupMuestras VC.swift"; sourceTree = "<group>"; };
+		3C18CC731F7A1F8700400276 /* SupBrocas VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SupBrocas VC.swift"; sourceTree = "<group>"; };
+		3C18CC751F7A1F9C00400276 /* SupAccesorios VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SupAccesorios VC.swift"; sourceTree = "<group>"; };
+		3C3E2FB31F689F4900553329 /* AdminPop2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPop2ViewController.swift; sourceTree = "<group>"; };
+		3C3E2FB51F68A9CB00553329 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		3C3E2FB71F69125900553329 /* My2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = My2TableViewCell.swift; sourceTree = "<group>"; };
+		3C3E2FB91F691D3700553329 /* ModulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
+		3C3E2FBB1F69E04A00553329 /* LoginAdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAdminViewController.swift; sourceTree = "<group>"; };
+		3C3E2FBD1F69E09A00553329 /* LoginSupervisorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSupervisorViewController.swift; sourceTree = "<group>"; };
+		3C3E2FBF1F69E0B900553329 /* LoginClienteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginClienteViewController.swift; sourceTree = "<group>"; };
+		3C3E2FC11F6A05C200553329 /* FormularioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormularioViewController.swift; sourceTree = "<group>"; };
+		3C3E2FC51F6A2A6400553329 /* ProyectosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProyectosTableViewCell.swift; sourceTree = "<group>"; };
+		3C3E2FC71F6A616800553329 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		3C3E2FC91F6A6A3800553329 /* Proyecto1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proyecto1Cell.swift; sourceTree = "<group>"; };
+		3C45FE6E1F77425400ABF457 /* Materiales VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Materiales VC.swift"; sourceTree = "<group>"; };
+		3C45FE701F77461D00ABF457 /* MaterialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialCell.swift; sourceTree = "<group>"; };
+		3C45FE721F77488700ABF457 /* Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		3C45FE741F7760C700ABF457 /* Actividades VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Actividades VC.swift"; sourceTree = "<group>"; };
+		3C45FE761F7760FC00ABF457 /* ActividadesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActividadesCell.swift; sourceTree = "<group>"; };
+		3C45FE781F77A79800ABF457 /* Accesorios VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Accesorios VC.swift"; sourceTree = "<group>"; };
+		3C45FE7A1F77A8B500ABF457 /* AccesorioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccesorioCell.swift; sourceTree = "<group>"; };
+		3C7F9C971F7A43D9007164D6 /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		3C7F9C9A1F7A71DC007164D6 /* ClienteProAdminVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteProAdminVC.swift; sourceTree = "<group>"; };
+		3C89E4B71F60A2A800011409 /* Admin3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admin3ViewController.swift; sourceTree = "<group>"; };
+		3CC4B0AB1F7956F00091605F /* SupervisorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupervisorCell.swift; sourceTree = "<group>"; };
+		3CC7A2651F5EAC3500E407E1 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		3CC7A2671F5EAEE500E407E1 /* Admin2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admin2ViewController.swift; sourceTree = "<group>"; };
+		3CCD48661F6AF8CD000C7CEB /* ProyAdmSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProyAdmSnapshot.swift; sourceTree = "<group>"; };
+		3CCD48691F6D2F24000C7CEB /* BrocaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrocaViewController.swift; sourceTree = "<group>"; };
+		3CCD486C1F6D46AD000C7CEB /* Broca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Broca.swift; sourceTree = "<group>"; };
+		3CCD486E1F6D4F0D000C7CEB /* MuestrasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuestrasViewController.swift; sourceTree = "<group>"; };
+		3CCD48701F6D55BB000C7CEB /* Corrida.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Corrida.swift; sourceTree = "<group>"; };
+		3CCD48721F6D5911000C7CEB /* CorridaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorridaCell.swift; sourceTree = "<group>"; };
+		3CCD48741F6DC66B000C7CEB /* AditivoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AditivoViewController.swift; sourceTree = "<group>"; };
+		3CD6E2BB1F6F3B3F007FAF05 /* Aditivo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aditivo.swift; sourceTree = "<group>"; };
+		3CD6E2BD1F6F82F7007FAF05 /* Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		3CD6E2BF1F6FD8A9007FAF05 /* ListaPerforistasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPerforistasViewController.swift; sourceTree = "<group>"; };
+		3CD6E2C11F6FDBC3007FAF05 /* PerforistaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerforistaCell.swift; sourceTree = "<group>"; };
+		3CD6E2C31F701483007FAF05 /* ListaEquipoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaEquipoViewController.swift; sourceTree = "<group>"; };
+		3CD6E2C51F701A1F007FAF05 /* ListaEquipoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaEquipoCell.swift; sourceTree = "<group>"; };
+		3CD6E2C71F711114007FAF05 /* Perforista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perforista.swift; sourceTree = "<group>"; };
+		3CD6E2C91F72484A007FAF05 /* SupervisorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupervisorViewController.swift; sourceTree = "<group>"; };
+		3CD6E2CB1F724ADE007FAF05 /* ClienteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteViewController.swift; sourceTree = "<group>"; };
+		3CD6E2CD1F7318A6007FAF05 /* AdminFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminFormVC.swift; sourceTree = "<group>"; };
+		3CD6E2CF1F731901007FAF05 /* AdminUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminUserVC.swift; sourceTree = "<group>"; };
+		3CD6E2D11F731922007FAF05 /* AdminMachVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminMachVC.swift; sourceTree = "<group>"; };
+		3CD6E2D31F731946007FAF05 /* AdminProjVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminProjVC.swift; sourceTree = "<group>"; };
+		3CD6E2D51F73385D007FAF05 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		3CD6E2D71F733CDA007FAF05 /* UsuarioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioCell.swift; sourceTree = "<group>"; };
+		3CD6E2D91F73859F007FAF05 /* MaquinaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaquinaCell.swift; sourceTree = "<group>"; };
+		3CD6E2DB1F738C25007FAF05 /* Proyecto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proyecto.swift; sourceTree = "<group>"; };
+		3CD6E2DD1F738DC3007FAF05 /* ProyectoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProyectoCell.swift; sourceTree = "<group>"; };
+		3CD6E2E11F746D53007FAF05 /* ProyectoAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProyectoAdmin.swift; sourceTree = "<group>"; };
+		3CD6E2E31F7499B6007FAF05 /* PerforistaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerforistaVC.swift; sourceTree = "<group>"; };
+		3CD6E2E51F74A9FF007FAF05 /* Perforista2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perforista2VC.swift; sourceTree = "<group>"; };
+		3CE04C281F78DBBF00327A2D /* FormularioSup VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FormularioSup VC.swift"; sourceTree = "<group>"; };
+		3CE04C2A1F78FC6A00327A2D /* AditivoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AditivoCell.swift; sourceTree = "<group>"; };
+		3CE707EE1F7A820700D47872 /* ProyClienteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProyClienteCell.swift; sourceTree = "<group>"; };
 		3CE7BDF21F47923300F51B18 /* Explomin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Explomin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE7BDF51F47923300F51B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CE7BDF71F47923300F51B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +181,14 @@
 		3CE7BE141F47923400F51B18 /* ExplominUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExplominUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE7BE181F47923400F51B18 /* ExplominUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplominUITests.swift; sourceTree = "<group>"; };
 		3CE7BE1A1F47923400F51B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE7BE261F47A1B900F51B18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3CE7BE2C1F4CF0EF00F51B18 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4AA1275680EF68B762135A69 /* Pods-ExplominTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExplominTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExplominTests/Pods-ExplominTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94A03FC5B4D017B8A1B4585B /* Pods_Explomin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Explomin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03ADDDDD2BF40B08CF72213 /* Pods-ExplominUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExplominUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExplominUITests/Pods-ExplominUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB4714D10EC6AE64C9FD72FA /* Pods-ExplominTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExplominTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExplominTests/Pods-ExplominTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4BA9FEA35B7FF01E8087A89 /* Pods_ExplominUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExplominUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0A95BBE209941C1EE9C62A /* Pods-Explomin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explomin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Explomin/Pods-Explomin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B441366D7BB469F9F534944 /* Pods_Explomin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C670C06667DA3EB403340C63 /* Pods_ExplominTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +212,133 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40885EFBCEE604F55D244089 /* Pods_ExplominUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D93BEFF98A2078058CA570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94A03FC5B4D017B8A1B4585B /* Pods_Explomin.framework */,
+				14345664724C149C29B08BB2 /* Pods_ExplominTests.framework */,
+				F4BA9FEA35B7FF01E8087A89 /* Pods_ExplominUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C3E2FCB1F6A7E4D00553329 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3CCD48721F6D5911000C7CEB /* CorridaCell.swift */,
+				3C3E2FB71F69125900553329 /* My2TableViewCell.swift */,
+				3C3E2FB51F68A9CB00553329 /* MyTableViewCell.swift */,
+				3C3E2FC91F6A6A3800553329 /* Proyecto1Cell.swift */,
+				3C3E2FC51F6A2A6400553329 /* ProyectosTableViewCell.swift */,
+				3CD6E2C11F6FDBC3007FAF05 /* PerforistaCell.swift */,
+				3CD6E2C51F701A1F007FAF05 /* ListaEquipoCell.swift */,
+				3CD6E2D71F733CDA007FAF05 /* UsuarioCell.swift */,
+				3CD6E2D91F73859F007FAF05 /* MaquinaCell.swift */,
+				3CD6E2DD1F738DC3007FAF05 /* ProyectoCell.swift */,
+				3C45FE701F77461D00ABF457 /* MaterialCell.swift */,
+				3C45FE761F7760FC00ABF457 /* ActividadesCell.swift */,
+				3C45FE7A1F77A8B500ABF457 /* AccesorioCell.swift */,
+				3CE04C2A1F78FC6A00327A2D /* AditivoCell.swift */,
+				3CC4B0AB1F7956F00091605F /* SupervisorCell.swift */,
+				3CE707EE1F7A820700D47872 /* ProyClienteCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3C7F9C991F7A716E007164D6 /* Cliente */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6E2CB1F724ADE007FAF05 /* ClienteViewController.swift */,
+				3C7F9C9A1F7A71DC007164D6 /* ClienteProAdminVC.swift */,
+			);
+			name = Cliente;
+			sourceTree = "<group>";
+		};
+		3CCD48681F6AFAD3000C7CEB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C7F9C991F7A716E007164D6 /* Cliente */,
+				3CE04C271F78D17200327A2D /* Supervisor */,
+				3CE04C261F7892B100327A2D /* Administrador */,
+				3CE04C251F7891FA00327A2D /* Perforista */,
+				3CFA6E501F77D2D400D804AA /* Logins */,
+				3C3E2FB91F691D3700553329 /* ModulesViewController.swift */,
+				3CE7BDF71F47923300F51B18 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3CCD486B1F6D4683000C7CEB /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3CCD486C1F6D46AD000C7CEB /* Broca.swift */,
+				3CCD48701F6D55BB000C7CEB /* Corrida.swift */,
+				3CD6E2BB1F6F3B3F007FAF05 /* Aditivo.swift */,
+				3CD6E2C71F711114007FAF05 /* Perforista.swift */,
+				3CD6E2D51F73385D007FAF05 /* Usuario.swift */,
+				3CD6E2DB1F738C25007FAF05 /* Proyecto.swift */,
+				3CD6E2E11F746D53007FAF05 /* ProyectoAdmin.swift */,
+				3C45FE721F77488700ABF457 /* Material.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		3CE04C251F7891FA00327A2D /* Perforista */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6E2E31F7499B6007FAF05 /* PerforistaVC.swift */,
+				3CD6E2E51F74A9FF007FAF05 /* Perforista2VC.swift */,
+				3C3E2FC11F6A05C200553329 /* FormularioViewController.swift */,
+				3C45FE781F77A79800ABF457 /* Accesorios VC.swift */,
+				3C45FE741F7760C700ABF457 /* Actividades VC.swift */,
+				3CCD48741F6DC66B000C7CEB /* AditivoViewController.swift */,
+				3CCD48691F6D2F24000C7CEB /* BrocaViewController.swift */,
+				3C45FE6E1F77425400ABF457 /* Materiales VC.swift */,
+				3CCD486E1F6D4F0D000C7CEB /* MuestrasViewController.swift */,
+			);
+			name = Perforista;
+			sourceTree = "<group>";
+		};
+		3CE04C261F7892B100327A2D /* Administrador */ = {
+			isa = PBXGroup;
+			children = (
+				3CC7A2671F5EAEE500E407E1 /* Admin2ViewController.swift */,
+				3C89E4B71F60A2A800011409 /* Admin3ViewController.swift */,
+				3CD6E2CD1F7318A6007FAF05 /* AdminFormVC.swift */,
+				3CD6E2D11F731922007FAF05 /* AdminMachVC.swift */,
+				3C3E2FB31F689F4900553329 /* AdminPop2ViewController.swift */,
+				3CD6E2D31F731946007FAF05 /* AdminProjVC.swift */,
+				3CD6E2CF1F731901007FAF05 /* AdminUserVC.swift */,
+				3CC7A2651F5EAC3500E407E1 /* AdminViewController.swift */,
+				3CD6E2C31F701483007FAF05 /* ListaEquipoViewController.swift */,
+				3CD6E2BF1F6FD8A9007FAF05 /* ListaPerforistasViewController.swift */,
+			);
+			name = Administrador;
+			sourceTree = "<group>";
+		};
+		3CE04C271F78D17200327A2D /* Supervisor */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6E2C91F72484A007FAF05 /* SupervisorViewController.swift */,
+				3CE04C281F78DBBF00327A2D /* FormularioSup VC.swift */,
+				3C18CC691F7A129200400276 /* DetailForm VC.swift */,
+				3C18CC6B1F7A1F2B00400276 /* SupAditivos VC.swift */,
+				3C18CC6D1F7A1F4800400276 /* SupMateriales VC.swift */,
+				3C18CC6F1F7A1F5F00400276 /* SupActividades.swift */,
+				3C18CC711F7A1F7100400276 /* SupMuestras VC.swift */,
+				3C18CC731F7A1F8700400276 /* SupBrocas VC.swift */,
+				3C18CC751F7A1F9C00400276 /* SupAccesorios VC.swift */,
+			);
+			name = Supervisor;
+			sourceTree = "<group>";
+		};
 		3CE7BDE91F47923300F51B18 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +346,8 @@
 				3CE7BE0C1F47923400F51B18 /* ExplominTests */,
 				3CE7BE171F47923400F51B18 /* ExplominUITests */,
 				3CE7BDF31F47923300F51B18 /* Products */,
+				F849815AAC6135B5BE63749C /* Pods */,
+				27D93BEFF98A2078058CA570 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +365,19 @@
 			isa = PBXGroup;
 			children = (
 				3CE7BDF51F47923300F51B18 /* AppDelegate.swift */,
-				3CE7BDF71F47923300F51B18 /* ViewController.swift */,
+				3CD6E2BD1F6F82F7007FAF05 /* Variables.swift */,
+				3CCD486B1F6D4683000C7CEB /* Objects */,
+				3C3E2FCB1F6A7E4D00553329 /* Cells */,
+				3CCD48681F6AFAD3000C7CEB /* ViewControllers */,
+				3C3E2FC71F6A616800553329 /* DatabaseService.swift */,
+				3C7F9C971F7A43D9007164D6 /* TestVC.swift */,
+				3CCD48661F6AF8CD000C7CEB /* ProyAdmSnapshot.swift */,
 				3CE7BDF91F47923300F51B18 /* Main.storyboard */,
-				3CE7BDFF1F47923300F51B18 /* Assets.xcassets */,
 				3CE7BE011F47923400F51B18 /* LaunchScreen.storyboard */,
+				3CE7BE261F47A1B900F51B18 /* GoogleService-Info.plist */,
 				3CE7BE041F47923400F51B18 /* Info.plist */,
 				3CE7BDFC1F47923300F51B18 /* Explomin.xcdatamodeld */,
+				3CE7BDFF1F47923300F51B18 /* Assets.xcassets */,
 			);
 			path = Explomin;
 			sourceTree = "<group>";
@@ -128,6 +400,30 @@
 			path = ExplominUITests;
 			sourceTree = "<group>";
 		};
+		3CFA6E501F77D2D400D804AA /* Logins */ = {
+			isa = PBXGroup;
+			children = (
+				3C3E2FBB1F69E04A00553329 /* LoginAdminViewController.swift */,
+				3C3E2FBF1F69E0B900553329 /* LoginClienteViewController.swift */,
+				3C3E2FBD1F69E09A00553329 /* LoginSupervisorViewController.swift */,
+				3CE7BE2C1F4CF0EF00F51B18 /* LoginViewController.swift */,
+			);
+			name = Logins;
+			sourceTree = "<group>";
+		};
+		F849815AAC6135B5BE63749C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC0A95BBE209941C1EE9C62A /* Pods-Explomin.debug.xcconfig */,
+				1248C92FD05660364D63E782 /* Pods-Explomin.release.xcconfig */,
+				4AA1275680EF68B762135A69 /* Pods-ExplominTests.debug.xcconfig */,
+				DB4714D10EC6AE64C9FD72FA /* Pods-ExplominTests.release.xcconfig */,
+				193CD530064459B9B758D3FB /* Pods-ExplominUITests.debug.xcconfig */,
+				C03ADDDDD2BF40B08CF72213 /* Pods-ExplominUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +431,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CE7BE1D1F47923400F51B18 /* Build configuration list for PBXNativeTarget "Explomin" */;
 			buildPhases = (
+				63416A82577ED733E2994538 /* [CP] Check Pods Manifest.lock */,
 				3CE7BDEE1F47923300F51B18 /* Sources */,
 				3CE7BDEF1F47923300F51B18 /* Frameworks */,
 				3CE7BDF01F47923300F51B18 /* Resources */,
+				B3D7060F4093E6BAD0341590 /* [CP] Embed Pods Frameworks */,
+				72D1D1A75AC1F7D8705CCA7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +451,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CE7BE201F47923400F51B18 /* Build configuration list for PBXNativeTarget "ExplominTests" */;
 			buildPhases = (
+				E14045119C4B39C6AE0DDD27 /* [CP] Check Pods Manifest.lock */,
 				3CE7BE051F47923400F51B18 /* Sources */,
 				3CE7BE061F47923400F51B18 /* Frameworks */,
 				3CE7BE071F47923400F51B18 /* Resources */,
+				A564FBFCD8F1B7A1A8AC252D /* [CP] Embed Pods Frameworks */,
+				3EEBE187A797B3936C9FE9FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +472,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CE7BE231F47923400F51B18 /* Build configuration list for PBXNativeTarget "ExplominUITests" */;
 			buildPhases = (
+				5D770167CC81D67D522B41E7 /* [CP] Check Pods Manifest.lock */,
 				3CE7BE101F47923400F51B18 /* Sources */,
 				3CE7BE111F47923400F51B18 /* Frameworks */,
 				3CE7BE121F47923400F51B18 /* Resources */,
+				A39F55C39E663544769E5A96 /* [CP] Embed Pods Frameworks */,
+				707883BDB531D18D542D7DE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +501,7 @@
 				TargetAttributes = {
 					3CE7BDF11F47923300F51B18 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5T8F3YP766;
 						ProvisioningStyle = Automatic;
 					};
 					3CE7BE081F47923400F51B18 = {
@@ -236,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CE7BE031F47923400F51B18 /* LaunchScreen.storyboard in Resources */,
+				3CE7BE271F47A1B900F51B18 /* GoogleService-Info.plist in Resources */,
 				3CE7BE001F47923300F51B18 /* Assets.xcassets in Resources */,
 				3CE7BDFB1F47923300F51B18 /* Main.storyboard in Resources */,
 			);
@@ -257,14 +564,235 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EEBE187A797B3936C9FE9FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExplominTests/Pods-ExplominTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D770167CC81D67D522B41E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExplominUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63416A82577ED733E2994538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Explomin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		707883BDB531D18D542D7DE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExplominUITests/Pods-ExplominUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72D1D1A75AC1F7D8705CCA7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Explomin/Pods-Explomin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A39F55C39E663544769E5A96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExplominUITests/Pods-ExplominUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A564FBFCD8F1B7A1A8AC252D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExplominTests/Pods-ExplominTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3D7060F4093E6BAD0341590 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Explomin/Pods-Explomin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Explomin/Pods-Explomin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E14045119C4B39C6AE0DDD27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExplominTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CE7BDEE1F47923300F51B18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD6E2C61F701A1F007FAF05 /* ListaEquipoCell.swift in Sources */,
+				3CCD486A1F6D2F25000C7CEB /* BrocaViewController.swift in Sources */,
+				3CD6E2CA1F72484A007FAF05 /* SupervisorViewController.swift in Sources */,
+				3C3E2FB41F689F4900553329 /* AdminPop2ViewController.swift in Sources */,
+				3CE707EF1F7A820700D47872 /* ProyClienteCell.swift in Sources */,
+				3C18CC701F7A1F5F00400276 /* SupActividades.swift in Sources */,
+				3C3E2FBA1F691D3700553329 /* ModulesViewController.swift in Sources */,
 				3CE7BDF81F47923300F51B18 /* ViewController.swift in Sources */,
+				3C3E2FC81F6A616900553329 /* DatabaseService.swift in Sources */,
+				3CCD48711F6D55BB000C7CEB /* Corrida.swift in Sources */,
+				3CD6E2BE1F6F82F8007FAF05 /* Variables.swift in Sources */,
+				3C18CC6C1F7A1F2B00400276 /* SupAditivos VC.swift in Sources */,
+				3CD6E2C41F701484007FAF05 /* ListaEquipoViewController.swift in Sources */,
+				3CD6E2DC1F738C26007FAF05 /* Proyecto.swift in Sources */,
+				3C3E2FB61F68A9CB00553329 /* MyTableViewCell.swift in Sources */,
+				3CD6E2C81F711114007FAF05 /* Perforista.swift in Sources */,
 				3CE7BDF61F47923300F51B18 /* AppDelegate.swift in Sources */,
+				3CE04C291F78DBBF00327A2D /* FormularioSup VC.swift in Sources */,
+				3C3E2FBE1F69E09A00553329 /* LoginSupervisorViewController.swift in Sources */,
+				3C3E2FC61F6A2A6400553329 /* ProyectosTableViewCell.swift in Sources */,
+				3CC4B0AC1F7956F00091605F /* SupervisorCell.swift in Sources */,
+				3CE7BE2D1F4CF0EF00F51B18 /* LoginViewController.swift in Sources */,
+				3C18CC6E1F7A1F4800400276 /* SupMateriales VC.swift in Sources */,
+				3CCD486D1F6D46AD000C7CEB /* Broca.swift in Sources */,
+				3CD6E2C01F6FD8A9007FAF05 /* ListaPerforistasViewController.swift in Sources */,
+				3C45FE771F7760FC00ABF457 /* ActividadesCell.swift in Sources */,
+				3C3E2FC21F6A05C300553329 /* FormularioViewController.swift in Sources */,
+				3CD6E2DA1F7385A0007FAF05 /* MaquinaCell.swift in Sources */,
+				3CE04C2B1F78FC6D00327A2D /* AditivoCell.swift in Sources */,
+				3C45FE731F77488700ABF457 /* Material.swift in Sources */,
+				3C89E4B81F60A2A800011409 /* Admin3ViewController.swift in Sources */,
+				3C18CC741F7A1F8700400276 /* SupBrocas VC.swift in Sources */,
+				3CD6E2CE1F7318A6007FAF05 /* AdminFormVC.swift in Sources */,
+				3C7F9C981F7A43DA007164D6 /* TestVC.swift in Sources */,
+				3CCD48751F6DC66C000C7CEB /* AditivoViewController.swift in Sources */,
+				3C3E2FBC1F69E04B00553329 /* LoginAdminViewController.swift in Sources */,
+				3CC7A2661F5EAC3500E407E1 /* AdminViewController.swift in Sources */,
+				3C45FE6F1F77425400ABF457 /* Materiales VC.swift in Sources */,
+				3C18CC761F7A1F9C00400276 /* SupAccesorios VC.swift in Sources */,
+				3C18CC6A1F7A129200400276 /* DetailForm VC.swift in Sources */,
+				3CD6E2C21F6FDBC3007FAF05 /* PerforistaCell.swift in Sources */,
+				3CD6E2D01F731901007FAF05 /* AdminUserVC.swift in Sources */,
+				3CD6E2D61F73385E007FAF05 /* Usuario.swift in Sources */,
 				3CE7BDFE1F47923300F51B18 /* Explomin.xcdatamodeld in Sources */,
+				3CD6E2E61F74A9FF007FAF05 /* Perforista2VC.swift in Sources */,
+				3CD6E2D81F733CDA007FAF05 /* UsuarioCell.swift in Sources */,
+				3CD6E2E41F7499B6007FAF05 /* PerforistaVC.swift in Sources */,
+				3C3E2FCA1F6A6A3800553329 /* Proyecto1Cell.swift in Sources */,
+				3CD6E2E21F746D53007FAF05 /* ProyectoAdmin.swift in Sources */,
+				3C45FE791F77A79800ABF457 /* Accesorios VC.swift in Sources */,
+				3C45FE751F7760C800ABF457 /* Actividades VC.swift in Sources */,
+				3C7F9C9B1F7A71DC007164D6 /* ClienteProAdminVC.swift in Sources */,
+				3C18CC721F7A1F7100400276 /* SupMuestras VC.swift in Sources */,
+				3C3E2FC01F69E0B900553329 /* LoginClienteViewController.swift in Sources */,
+				3CD6E2CC1F724ADE007FAF05 /* ClienteViewController.swift in Sources */,
+				3CD6E2D21F731922007FAF05 /* AdminMachVC.swift in Sources */,
+				3C3E2FB81F69125A00553329 /* My2TableViewCell.swift in Sources */,
+				3CCD486F1F6D4F0D000C7CEB /* MuestrasViewController.swift in Sources */,
+				3CD6E2DE1F738DC3007FAF05 /* ProyectoCell.swift in Sources */,
+				3CCD48671F6AF8CD000C7CEB /* ProyAdmSnapshot.swift in Sources */,
+				3CC7A2681F5EAEE500E407E1 /* Admin2ViewController.swift in Sources */,
+				3C45FE7B1F77A8B500ABF457 /* AccesorioCell.swift in Sources */,
+				3C45FE711F77461D00ABF457 /* MaterialCell.swift in Sources */,
+				3CCD48731F6D5911000C7CEB /* CorridaCell.swift in Sources */,
+				3CD6E2BC1F6F3B3F007FAF05 /* Aditivo.swift in Sources */,
+				3CD6E2D41F731946007FAF05 /* AdminProjVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +888,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC.",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -405,8 +937,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC.",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,9 +952,12 @@
 		};
 		3CE7BE1E1F47923400F51B18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC0A95BBE209941C1EE9C62A /* Pods-Explomin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5T8F3YP766;
 				INFOPLIST_FILE = Explomin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = danlopgil.Explomin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,9 +967,12 @@
 		};
 		3CE7BE1F1F47923400F51B18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1248C92FD05660364D63E782 /* Pods-Explomin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5T8F3YP766;
 				INFOPLIST_FILE = Explomin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = danlopgil.Explomin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +982,7 @@
 		};
 		3CE7BE211F47923400F51B18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA1275680EF68B762135A69 /* Pods-ExplominTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +997,7 @@
 		};
 		3CE7BE221F47923400F51B18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4714D10EC6AE64C9FD72FA /* Pods-ExplominTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +1012,7 @@
 		};
 		3CE7BE241F47923400F51B18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 193CD530064459B9B758D3FB /* Pods-ExplominUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ExplominUITests/Info.plist;
@@ -481,6 +1026,7 @@
 		};
 		3CE7BE251F47923400F51B18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03ADDDDD2BF40B08CF72213 /* Pods-ExplominUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ExplominUITests/Info.plist;
@@ -511,6 +1057,7 @@
 				3CE7BE1F1F47923400F51B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CE7BE201F47923400F51B18 /* Build configuration list for PBXNativeTarget "ExplominTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +1066,7 @@
 				3CE7BE221F47923400F51B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CE7BE231F47923400F51B18 /* Build configuration list for PBXNativeTarget "ExplominUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +1075,7 @@
 				3CE7BE251F47923400F51B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
