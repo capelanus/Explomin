@@ -42,7 +42,8 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var clienteTextField: UITextField!
     @IBOutlet weak var proyectoTextField: UITextField!
     @IBOutlet weak var unegocioTextField: UITextField!
-    @IBOutlet weak var pkdate: UIDatePicker!
+    //@IBOutlet weak var pkdate: UIDatePicker!
+    @IBOutlet weak var fechaTextField: UITextField!
     
     var picker = UIPickerView()
     var picker2 = UIPickerView()
@@ -57,6 +58,8 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        getDate()
         fetchClient()
         fetchProject()
         fecthNegocio()
@@ -64,20 +67,45 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         picker.delegate = self
         picker.dataSource = self
         
-        picker2.delegate = self
-        picker2.dataSource = self
+       // picker2.delegate = self
+        //picker2.dataSource = self
         
         picker3.delegate = self
         picker3.dataSource = self
         
         clienteTextField.inputView = picker
         
-        proyectoTextField.inputView = picker2
+       // proyectoTextField.inputView = picker2
         
         unegocioTextField.inputView = picker3
         
       
 
+        
+    }
+    
+    private func getDate(){
+        
+        
+        let date = Date()
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "dd/MM/yyyy"
+        let result = formatter.string(from: date)
+        
+        fechaTextField.text = result
+        
+        
+        
+    }
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
         
     }
     
@@ -94,10 +122,11 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBAction func createButton(_ sender: Any) {
         
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
+        //let formatter = DateFormatter()
+        //formatter.dateFormat = "dd/MM/yyyy"
         
-        let date = formatter.string(from: pkdate.date)
+        let date = fechaTextField.text
+        let name = proyectoTextField.text
         
        // let perf = Variables.perfo2
         let maq = Variables.maqui2
@@ -112,13 +141,12 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
         let ref2 = databaseRef.key
         
-        print (ref2)
         
         let ref3 = ref2.makeFirebaseString()
         
-        print(ref3)
         
-        let post : [String : AnyObject] = ["cliente" : datoCli as AnyObject, "id" : "0" as AnyObject, "unidadNegocio" : datoUne as AnyObject, "nombre" : datoPro as AnyObject, "fecha" : date as AnyObject, "equipos": maq as AnyObject, "actividades" : act as AnyObject, "key": ref3 as AnyObject]
+        
+        let post : [String : AnyObject] = ["cliente" : datoCli as AnyObject, "id" : "0" as AnyObject, "unidadNegocio" : datoUne as AnyObject, "nombre" : name as AnyObject, "fecha" : date as AnyObject, "equipos": maq as AnyObject, "actividades" : act as AnyObject, "key": ref3 as AnyObject]
         
         Database.database().reference().child("explomin").child("ProyectoAdmin").child(ref3).setValue(post)
         
@@ -232,6 +260,11 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -244,11 +277,7 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
 
         }
         
-        if pickerView == picker2{
-            
-            return arrayPro.count
-            
-        }
+     
         
         if pickerView == picker3{
             
@@ -267,11 +296,7 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             
         }
         
-        if pickerView == picker2{
-            
-            return arrayPro[row]
-            
-        }
+     
         
         if pickerView == picker3{
             
@@ -293,13 +318,7 @@ class Admin3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             
         }
         
-        if pickerView == picker2{
-            
-            datoPro=arrayPro[row]
-            proyectoTextField.text = arrayPro[row]
-            self.view.endEditing(false)
-            
-        }
+      
         
         if pickerView == picker3{
             

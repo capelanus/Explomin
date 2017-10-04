@@ -8,14 +8,6 @@
 
 import UIKit
 
-//var aditivos = [Aditivo]()
-
-protocol DataSentDelegate{
-
-
-    func userDidEnterData(data : AnyObject)
-
-}
 
 class AditivoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource {
 
@@ -24,24 +16,33 @@ class AditivoViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var uniTextField: UITextField!
     @IBOutlet weak var canTextField: UITextField!
     @IBOutlet weak var myTable: UITableView!
+    @IBOutlet weak var ok: UIButton!
     
+    var aditivos = ["Bento Plug", "Max Gel", "Sulfato de aluminio", "Poly Seal", "PTC Pac HV", "Corewell", "Poly plus liquido"]
     var unis = ["Unidades", "Cajas", "Sacos", "unidades", "Baldes"]
     var picker = UIPickerView()
-    var array = [[String : AnyObject]]()
+    var picker2 = UIPickerView()
 
-   // var delegate : DataSentDelegate? = nil
-    var dic = [String : AnyObject]()
+    var array = [[ : ]]
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ok.layer.cornerRadius = 10
+        ok.clipsToBounds = true
+        
         picker.delegate = self
         picker.dataSource = self
         
-        array = [[:]]
+        picker2.delegate = self
+        picker2.dataSource = self
         
+        array = []
+        
+        textField.inputView = picker2
+
         uniTextField.inputView = picker
 
         // Do any additional setup after loading the view.
@@ -54,20 +55,50 @@ class AditivoViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
+        
+        if pickerView == picker2{
+            
+            return aditivos[row]
+            
+        }
+        
         return unis[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        if pickerView == picker2{
+            
+            return aditivos.count
+            
+        }
         
         return unis.count
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
+        if pickerView == picker2{
+            
+            textField.text = aditivos[row]
+            self.view.endEditing(false)
+
+            
+        }
+        
+        
         uniTextField.text = unis[row]
         self.view.endEditing(false)
         
     }
+    
+    
+    
+    
+    
+    //TABLA
+    
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,8 +125,11 @@ class AditivoViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    
+    
  
-   
+   //BOTON AGREGAR +
     
 
     @IBAction func additive(_ sender: Any) {
@@ -105,11 +139,10 @@ class AditivoViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         let can = canTextField.text
         
         
-        dic = ["nombre" : adi as AnyObject, "cantidad": uni as AnyObject, "unidades":can as AnyObject]
+        let dic : [String : AnyObject] = ["nombre" : adi as AnyObject, "cantidad": uni as AnyObject, "unidades":can as AnyObject]
         
         
-        self.array.append(dic)
-        //Variables.adix2.append(dic)
+        array.append(dic)
         
         
         textField.text = ""
@@ -134,6 +167,8 @@ class AditivoViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             
             
         }*/
+        
+        print(array)
         
         Variables.adix2 = array
             dismiss(animated:true, completion: nil )

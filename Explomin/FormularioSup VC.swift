@@ -22,8 +22,19 @@ class FormularioSup_VC: UIViewController, UITableViewDelegate, UITableViewDataSo
         super.viewDidLoad()
         
         myTable.reloadData()
+        setupNavigationBar()
         
 
+    }
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -21,10 +21,21 @@ class AdminMachVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBar()
         arrayMaquinas = []
         
         fetchMachines()
 
+    }
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

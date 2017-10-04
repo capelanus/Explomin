@@ -36,6 +36,9 @@ class AdminPop2ViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        setupNavigationBar()
+        
         Variables.acti2 = []
         
         groupNames3 = []
@@ -50,6 +53,18 @@ class AdminPop2ViewController: UIViewController, UITableViewDataSource, UITableV
         
     
     
+    }
+    
+ 
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
     }
 
     override func didReceiveMemoryWarning() {

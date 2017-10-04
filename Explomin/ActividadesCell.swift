@@ -12,13 +12,14 @@ class ActividadesCell: UITableViewCell {
     
     
     @IBOutlet weak var actividadLabel: UILabel!
-    
     @IBOutlet weak var finLabel: UILabel!
     @IBOutlet weak var inicioLabel: UILabel!
     
+    var total = 0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
       
         
     }

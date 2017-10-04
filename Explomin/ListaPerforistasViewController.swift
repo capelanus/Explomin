@@ -9,33 +9,80 @@
 import UIKit
 import Firebase
 
-var perforistas = [Perforista]()
-var perforistasPass = [Perforista]()
 
 
 
-class ListaPerforistasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListaPerforistasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
+    
+    var perforistas = [Perforista]()
+    var perforistasPass = [Perforista]()
+    
+    var filteredArray = [Perforista]()
+    
+    var searchController = UISearchController()
+    var resultsController = UITableViewController()
 
     @IBOutlet weak var tableView: UITableView!
     
     
     var arrayFInal = [String]()
     var arrayInicial = [String]()
+    
+    
+    
+    
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         
         arrayInicial = []
+        
         fetchPerforista()
         
+        filteredArray = perforistas
         
+        print("yy", perforistas)
+        
+        searchController = UISearchController(searchResultsController : resultsController)
+        
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchResultsUpdater = self
+        
+        resultsController.tableView.delegate = self
+        resultsController.tableView.dataSource = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
 
+
+        //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
+        print("xx", filteredArray)
         
+        self.tableView.reloadData()
+
     
     }
+    
+ 
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        
+        if searchController.searchBar.text! == "" {
+            filteredArray = perforistas
+            print("funciona")
+        } else {
+            
+            // Filter the results
+            filteredArray = perforistas.filter{ $0.nombre.lowercased().contains(searchController.searchBar.text!.lowercased()) }
+            print("tmb funciona")
+        }
+        
+        self.tableView.reloadData()
+    }
+
     
     func fetchPerforista(){
     
@@ -45,7 +92,7 @@ class ListaPerforistasViewController: UIViewController, UITableViewDelegate, UIT
         ref.child("explomin").child("Perforista").queryOrdered(byChild: "nombre").observe(.value, with: { (snapshot) in
             
             self.arrayFInal = []
-            perforistas = []
+            self.perforistas = []
             
             for rest in snapshot.children.allObjects as! [DataSnapshot] {
                 
@@ -59,7 +106,7 @@ class ListaPerforistasViewController: UIViewController, UITableViewDelegate, UIT
                 if libre == "libre"{
                     
                     
-                    perforistas.append(perf)
+                    self.perforistas.append(perf)
                     //self.arrayFInal.append(firmac)
                     
                     
@@ -68,6 +115,8 @@ class ListaPerforistasViewController: UIViewController, UITableViewDelegate, UIT
                 
                 
             }
+            print(self.perforistas)
+            self.filteredArray = self.perforistas
             
             DispatchQueue.main.async{
                 self.tableView.reloadData()
@@ -84,19 +133,23 @@ class ListaPerforistasViewController: UIViewController, UITableViewDelegate, UIT
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return perforistas.count
+        return filteredArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PerforistaCell
+      //  let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PerforistaCell
+        
+        let cell = UITableViewCell()
+        
         
         let perfo : Perforista
         
-        perfo = perforistas[indexPath.row]
+        perfo = filteredArray[indexPath.row]
         
         
-        cell.nameLabel.text = perfo.nombre
+        //cell.nameLabel.text = perfo.nombre
+        cell.textLabel?.text = perfo.nombre
         
         
         return cell
@@ -118,7 +171,7 @@ class ListaPerforistasViewController: UIViewController, UITableViewDelegate, UIT
             
             let perfo : Perforista
             
-            perfo = perforistas[indexPath.row]
+            perfo = filteredArray[indexPath.row]
             
             let xxx = perfo.key
             
@@ -138,7 +191,7 @@ class ListaPerforistasViewController: UIViewController, UITableViewDelegate, UIT
     
     let perfo : Perforista
     
-    perfo = perforistas[indexPath.row]
+    perfo = filteredArray[indexPath.row]
     
     perforistasPass.append(perfo)
             

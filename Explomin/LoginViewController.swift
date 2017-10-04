@@ -23,7 +23,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var goin: UIButton!
+    
     var ref: DatabaseReference!
     var refHandle : UInt!
   
@@ -31,6 +33,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        
+        
+        goin.layer.borderWidth = 1.5
+        goin.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        goin.layer.cornerRadius = cornerRadius
         
         
         self.userTextField.delegate=self

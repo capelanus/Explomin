@@ -21,6 +21,8 @@ class SupervisorViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupNavigationBar()
 
     }
     
@@ -30,6 +32,16 @@ class SupervisorViewController: UIViewController {
         nos = [:]
         email = UserDefaults.standard.value(forKey: "email") as! String
         fetchSupervisor()
+        
+    }
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
         
     }
 

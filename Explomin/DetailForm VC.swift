@@ -44,10 +44,20 @@ class DetailForm_VC: UIViewController {
         super.viewDidLoad()
         
         self.key = Variables.keyxs
-        
+        setupNavigationBar()
         fetchForm()
         
 
+    }
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
     }
     
     
@@ -71,7 +81,18 @@ class DetailForm_VC: UIViewController {
                 
                 if let snapshotValue = snapshot.value as? NSDictionary, let snapVal = snapshotValue[snap.key]  {
                     
+                    //print(snap.key, "=" , snapVal)
                     
+                    
+                    
+                    if snap.key == "aditivos"{
+                        
+                        Variables.adi4 = (snapVal as? [[String : AnyObject]])!
+                        print(snapVal)
+                        
+                        
+                    }
+
                     
                     
                     if snap.key == "ayudante1"{
@@ -169,35 +190,33 @@ class DetailForm_VC: UIViewController {
                         
                     }
                     
-                    if snap.key == "accesorios"{
+                    if snap.key == "accesorios"{ //accesorios es diccionario, verificar si está vacío!!!
                         
-                       // Variables.acc4 = snapVal as? [String]
+                        Variables.acc4 = (snapVal as? [[String : AnyObject]])!
+                        //print("accesorios=", Variables.acc4)
+
+                    }
+                    if snap.key == "actividades"{ //actividades es diccionario, verificar si está vacío!!
+                        
+                        Variables.acti4 = (snapVal as? [[String : AnyObject]])!
+                        //print("actividades=", Variables.acti4)
                         
                     }
-                    if snap.key == "actividades"{
-                        
-                         Variables.acti4 = (snapVal as? [String])!
-                        
-                    }
-                    if snap.key == "aditivos"{
-                        
-                        Variables.adi4 = (snapVal as? [String])!
-                        
-                    }
+                 
                     if snap.key == "brocas"{
                         
-                         Variables.bro4 = (snapVal as? [String])!
+                         Variables.bro4 = (snapVal as? [[String : AnyObject]])!
                         
                     }
                     if snap.key == "corrida"{
                         
-                        Variables.mue4 = (snapVal as? [String])!
-                        
+                        Variables.mue4 = (snapVal as? [[String : AnyObject]])!
+                       // print("corridas=", Variables.mue4)
                     }
                     if snap.key == "materialesPerdidos"{
                         
-                        Variables.mat4 = (snapVal as? [String])!
-                        
+                        Variables.mat4 = (snapVal as? [[String : AnyObject]])!
+                        //print("materiales perdidos =",Variables.mat4)
                     }
                     
                   

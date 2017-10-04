@@ -10,10 +10,45 @@ import UIKit
 
 class ModulesViewController: UIViewController {
 
+   
+    @IBOutlet weak var perforista: UIButton!
+    @IBOutlet weak var supervisor: UIButton!
+    @IBOutlet weak var jefe: UIButton!
+    @IBOutlet weak var administrador: UIButton!
+    @IBOutlet weak var cliente: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+       
+  
+        perforista.layer.borderWidth = 1.5
+        perforista.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        perforista.layer.cornerRadius = cornerRadius
+        
+        
+        supervisor.layer.borderWidth = 1.5
+        supervisor.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        supervisor.layer.cornerRadius = cornerRadius
+        
 
-        // Do any additional setup after loading the view.
+        jefe.layer.borderWidth = 1.5
+        jefe.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        jefe.layer.cornerRadius = cornerRadius
+        
+        
+        administrador.layer.borderWidth = 1.5
+        administrador.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        administrador.layer.cornerRadius = cornerRadius
+        
+        
+        cliente.layer.borderWidth = 1.5
+        cliente.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        cliente.layer.cornerRadius = cornerRadius
+        
     }
 
     override func didReceiveMemoryWarning() {

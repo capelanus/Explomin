@@ -17,6 +17,7 @@ class Materiales_VC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var materialTextField: UITextField!
     @IBOutlet weak var cantidadTextField: UITextField!
     @IBOutlet weak var myTable: UITableView!
+    @IBOutlet weak var ok: UIButton!
     
     var mat = [String : AnyObject]()
 
@@ -25,7 +26,8 @@ class Materiales_VC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        ok.layer.cornerRadius = 10
+        ok.clipsToBounds = true
         arrayMateriales = []
         
         // Do any additional setup after loading the view.

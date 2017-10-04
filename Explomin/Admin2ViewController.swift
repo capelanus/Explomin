@@ -38,6 +38,8 @@ class Admin2ViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBar()
+        
         self.empresatextField.delegate = self
         self.nameTextfield.delegate = self
         self.passwordTextField.delegate = self
@@ -51,6 +53,16 @@ class Admin2ViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
     }
 
     
@@ -85,9 +97,10 @@ class Admin2ViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             let databaseRef = Database.database().reference().child("explomin").child("Perforista").childByAutoId()
                     
             let key = databaseRef.key
-                    
 
-                databaseRef.setValue(["nombre": name1, "email": email1, "key": key, "proyecto": "libre"])
+            
+
+                databaseRef.setValue(["nombre": name1,"empresa":empresa, "email": email1, "key": key, "proyecto": "libre"])
             
             let usuario : [String : AnyObject] = ["nombre": name1 as AnyObject, "email": email1 as AnyObject, "key": key as AnyObject, "empresa": empresa as AnyObject, "tipo": type as AnyObject]
             
@@ -105,9 +118,10 @@ class Admin2ViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                     let databaseRef = Database.database().reference().child("explomin").child("Supervisores").childByAutoId()
                     
                     let key = databaseRef.key
+
+            
                     
-                    
-                    databaseRef.setValue(["nombre": name1, "email": email1, "key": key])
+                    databaseRef.setValue(["nombre": name1,"empresa":empresa, "email": email1, "key": key])
             
             let usuario : [String : AnyObject] = ["nombre": name1 as AnyObject, "email": email1 as AnyObject, "key": key as AnyObject, "empresa": empresa as AnyObject, "tipo": type as AnyObject]
             
@@ -127,9 +141,10 @@ class Admin2ViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                     let databaseRef = Database.database().reference().child("explomin").child("Administradores").childByAutoId()
                     
                     let key = databaseRef.key
+
+            
                     
-                    
-                    databaseRef.setValue(["nombre": name1, "email": email1, "key": key])
+                    databaseRef.setValue(["nombre": name1,"empresa":empresa, "email": email1, "key": key])
             
             let usuario : [String : AnyObject] = ["nombre": name1 as AnyObject, "email": email1 as AnyObject, "key": key as AnyObject, "empresa": empresa as AnyObject, "tipo": type as AnyObject]
             
@@ -149,7 +164,7 @@ class Admin2ViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                     let key = databaseRef.key
                     
                     
-                    databaseRef.setValue(["nombre": name1, "email": email1, "key": key])
+                    databaseRef.setValue(["nombre": name1,"empresa":empresa, "email": email1, "key": key])
                     
                     let usuario : [String : AnyObject] = ["nombre": name1 as AnyObject, "email": email1 as AnyObject, "key": key as AnyObject, "empresa": empresa as AnyObject, "tipo": type as AnyObject]
                     

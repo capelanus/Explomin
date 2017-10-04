@@ -22,7 +22,8 @@ class ClienteViewController: UIViewController {
         super.viewDidLoad()
 
 
-    
+    setupNavigationBar()
+        
     
     }
     
@@ -34,6 +35,16 @@ class ClienteViewController: UIViewController {
         email = UserDefaults.standard.value(forKey: "email") as! String
         
         fetchData()
+        
+    }
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
         
     }
     

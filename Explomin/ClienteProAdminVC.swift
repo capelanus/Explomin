@@ -19,16 +19,48 @@ class ClienteProAdminVC: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayProyectos = [[:]]
+        setupNavigationBar()
+        
+        arrayProyectos = []
         empresa = Variables.empresaCli
         
     fetchProjAdmin()
 
     }
     
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayProyectos.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
+         let dir = arrayProyectos[indexPath.row]
+        
+        
+        //let nombre = dir["nombre"] as? String
+     // let fecha =  dir["fecha"] as? String
+       // let unidad = dir["unidad"] as? String
+         let key = dir["key"] as? String
+        
+        Variables.fkey = key!
+        
+        
+        self.performSegue(withIdentifier: "segueform", sender: self)
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,6 +72,8 @@ class ClienteProAdminVC: UIViewController, UITableViewDelegate, UITableViewDataS
         cell.nombreLabel.text = dir["nombre"] as? String
         cell.fechaLabel.text = dir["fecha"] as? String
         cell.unidadLabel.text = dir["unidad"] as? String
+        cell.unidadLabel.text = dir["unidad"] as? String
+
 
         return cell
         

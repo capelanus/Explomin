@@ -30,15 +30,20 @@ class AdminUserVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         super.viewDidLoad()
         
         arrayUsuarios = []
-
+        setupNavigationBar()
         fetchUser()
         
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
     }
     
     func fetchUser(){

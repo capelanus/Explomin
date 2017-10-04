@@ -15,6 +15,7 @@ class LoginAdminViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var entrar: UIButton!
     @IBAction func goButton(_ sender: Any) {
         
         if mailTextField.text != "" && passwordTextField.text != "" {
@@ -99,6 +100,17 @@ class LoginAdminViewController: UIViewController, UITextFieldDelegate {
         
         self.mailTextField.delegate = self
         self.passwordTextField.delegate = self
+        
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        
+        
+        entrar.layer.borderWidth = 1.5
+        entrar.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        entrar.layer.cornerRadius = cornerRadius
+        
+
 
         // Do any additional setup after loading the view.
     }

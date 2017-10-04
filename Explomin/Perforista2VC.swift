@@ -27,6 +27,8 @@ class Perforista2VC: UIViewController {
     @IBOutlet weak var fechaLabel: UILabel!
     @IBOutlet weak var mineraLabel: UILabel!
     
+    @IBOutlet weak var formulario: UIButton!
+    
     
     func load(){
         
@@ -50,13 +52,28 @@ class Perforista2VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        formulario.layer.cornerRadius = 15
+        formulario.clipsToBounds = true
         
 
-        
+        setupNavigationBar()
         myKey = Variables.key
         fetchProject()
     
     }
+    
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        titleImageView.frame = titleImageView.bounds
+        
+        navigationItem.titleView = titleImageView
+        
+    }
+    
 
     func fetchProject(){
         
@@ -72,9 +89,8 @@ class Perforista2VC: UIViewController {
                 
                 let snap = childSnap as! DataSnapshot
                 
-                if let snapshotValue = snapshot.value as? NSDictionary, let snapVal = snapshotValue[snap.key]  { // aqui había un as? anyobject desùes del corchete cerrado
+                if let snapshotValue = snapshot.value as? NSDictionary, let snapVal = snapshotValue[snap.key]  {
                     
-                    //print(snap.key)
                       print(snap.key, "=" , snapVal)
                     
                     if snap.key == "cliente"{
@@ -116,8 +132,8 @@ class Perforista2VC: UIViewController {
                         
                     }
                     
-                    print(self.actividades)
-                    print(self.equipos)
+                    //print(self.actividades)
+                    //print(self.equipos)
 
                     
                 }

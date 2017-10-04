@@ -13,6 +13,7 @@ class CorridaCell: UITableViewCell {
     @IBOutlet weak var oneLabel: UILabel!
     @IBOutlet weak var twoLabel: UILabel!
     @IBOutlet weak var threeLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
     
     
     override func awakeFromNib() {

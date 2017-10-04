@@ -41,16 +41,34 @@ class Variables: UIViewController {
     
 ////////////VARIABLE array DEL FORMULARIO QUE EL SUPERVISOR VA A REVISAR/////
 
-    static var adi4 = [String]()
-    static var mat4 = [String]()
-    static var acti4 = [String]()
-    static var mue4 = [String]()
-    static var bro4 = [String]()
-    static var acc4 = [String]()
+    static var adi4 = [[String : AnyObject]]()
+    static var mat4 = [[String : AnyObject]]()
+    static var acti4 = [[String : AnyObject]]() // actividades
+    static var mue4 = [[String : AnyObject]]()
+    static var bro4 = [[String : AnyObject]]()
+    static var acc4 = [[String : AnyObject]]() // accesorios
     
 ////////VARIABLE cliente nombre de la empresa////////
     
     static var empresaCli = String()
+    
+    
+    /////LA KEY DE PROYECTO ADMIN PARA SACAR LOS FORMULARIOS
+    
+    static var fkey = String()
+    
+    ///////LA KEY DEL FORMULARIO ADMIN
+
+    static var gkey = String()
+    
+    //VAIABLES PARA CLIENTEFORMDETAIL
+    
+    static var  faditivos = [[String : AnyObject]]()
+     static var  faccesorios = [[String : AnyObject]]()
+     static var  factividades = [[String : AnyObject]]()
+     static var  fbrocas = [[String : AnyObject]]()
+     static var  fcorridas = [[String : AnyObject]]()
+     static var  fmateriales = [[String : AnyObject]]()
 
     
     

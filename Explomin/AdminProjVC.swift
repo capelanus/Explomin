@@ -24,8 +24,19 @@ class AdminProjVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         arrayProyectos = []
         fetchProjects()
+        setupNavigationBar()
         
 
+        
+    }
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
         
     }
 

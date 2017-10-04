@@ -20,6 +20,7 @@ class FormularioViewController: UIViewController, UIPickerViewDataSource, UIPick
     @IBOutlet weak var azimuTextField: UITextField!
     
     @IBOutlet weak var incliTextField: UITextField!
+    
     @IBOutlet weak var minicialTextField: UITextField!
     @IBOutlet weak var mfinalTextField: UITextField!
     
@@ -38,17 +39,39 @@ class FormularioViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     @IBOutlet weak var fechaTextField: UITextField!
     
+    @IBOutlet weak var tmetrosLabel: UILabel!
+    @IBOutlet weak var thorasLabel: UILabel!
     
+    @IBOutlet weak var terrenoTextField: UITextField!
+    
+    @IBOutlet weak var muestrasL: UIButton!
+    @IBOutlet weak var aditivoL: UIButton!
+    @IBOutlet weak var materialesL: UIButton!
+    @IBOutlet weak var actividadesL: UIButton!
+    @IBOutlet weak var brocaL: UIButton!
+    @IBOutlet weak var accesoriosL: UIButton!
     
     
     var turno : String = "Turno A"
+    
     var picker = UIPickerView()
+    var picker2 = UIPickerView()
+    
     var arrayMaquinas = [String]()
     
     var unidadnegocio = String()
     var nombrepro = String ()
     var minera = String()
     var key = String()
+    
+    var desde = 0
+    var hasta = 0
+    
+    var desde1 = 0
+    var hasta1 = 0
+    
+    var terrenos = ["Arcilloso","Arenoso","Compacto","Duro","Fracturado"]
+
 
 
     
@@ -56,23 +79,133 @@ class FormularioViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     override func viewDidLoad() {
         
+        muestrasL.layer.cornerRadius = 10
+        muestrasL.clipsToBounds = true
+        
+        aditivoL.layer.cornerRadius = 10
+        aditivoL.clipsToBounds = true
+        
+        materialesL.layer.cornerRadius = 10
+        materialesL.clipsToBounds = true
+        
+        actividadesL.layer.cornerRadius = 10
+        actividadesL.clipsToBounds = true
+        
+        brocaL.layer.cornerRadius = 10
+        brocaL.clipsToBounds = true
+        
+        accesoriosL.layer.cornerRadius = 10
+        accesoriosL.clipsToBounds = true
+        
         
         super.viewDidLoad()
+        
+        setupNavigationBar()
+        
+        getDate()
         
         picker.delegate = self
         picker.dataSource = self
         
+        picker2.delegate = self
+        picker2.dataSource = self
+        
         arrayMaquinas = Variables.maquix3
+        
         maquinaTextFIeld.inputView = picker
+        terrenoTextField.inputView = picker2
         
         unidadnegocio = Variables.negocio
         nombrepro = Variables.nombreproy
         minera = Variables.minera
             key = Variables.keyq
         
+        minicialTextField.addTarget(self, action: #selector(textOnTextFieldDidChange(textField:)), for: .editingChanged)
+        
+        mfinalTextField.addTarget(self, action: #selector(textOnTextFieldDidChange(textField:)), for: .editingChanged)
+        
+        horoInicialTextField.addTarget(self, action: #selector(textOnTextFieldDidChange2(textField:)), for: .editingChanged)
+        
+          horoFinalTextField.addTarget(self, action: #selector(textOnTextFieldDidChange2(textField:)), for: .editingChanged)
+        
+        
 
     }
     
+    
+    private func getDate(){
+    
+    
+        let date = Date()
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "dd/MM/yyyy"
+        let result = formatter.string(from: date)
+        
+        fechaTextField.text = result
+    
+    
+    
+    }
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
+    }
+    
+    func textOnTextFieldDidChange(textField: UITextField){
+    
+    
+        if textField === minicialTextField {
+            desde = Int(textField.text!) ?? 0
+        } else if textField === mfinalTextField {
+            hasta = Int(textField.text!) ?? 0
+        }
+        
+        
+        if self.minicialTextField.text != "" && self.mfinalTextField.text != "" {
+        
+            let total = hasta - desde
+            let totals = String(total)
+            
+            self.tmetrosLabel.text = totals
+            
+            
+        }
+        
+       
+    
+    
+    }
+    
+    func textOnTextFieldDidChange2(textField: UITextField){
+    
+    
+        if textField === horoInicialTextField {
+            desde1 = Int(textField.text!) ?? 0
+        } else if textField === horoFinalTextField {
+            hasta1 = Int(textField.text!) ?? 0
+        }
+        
+        if self.horoFinalTextField.text != "" && self.horoInicialTextField.text != ""{
+        
+            let total = hasta1 - desde1
+            let totals = String(total)
+            
+            self.thorasLabel.text = totals
+            
+            
+        }
+        
+      
+    
+    
+    
+    }
    
     
     @IBAction func send(_ sender: Any) {
@@ -117,7 +250,7 @@ class FormularioViewController: UIViewController, UIPickerViewDataSource, UIPick
                                            "unidad de negocio" : unidadnegocio as AnyObject,
                                            "nombreproyecto" : nombrepro as AnyObject,
                                            "minera" : minera as AnyObject,
-                                           "keypro" : key as AnyObject,
+                                           "proyecto" : key as AnyObject,
 
 
                                            "maquina" : maquina as AnyObject,
@@ -211,6 +344,12 @@ class FormularioViewController: UIViewController, UIPickerViewDataSource, UIPick
     }
     
     
+    
+    
+    //Picker////////
+    
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         
         return 1
@@ -218,25 +357,62 @@ class FormularioViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        return arrayMaquinas[row]
+        if pickerView == picker2{
+            
+            return terrenos[row]
+            
+        }
+        
+       
+            
+          return arrayMaquinas[row]
+            
+        
+        
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
-        return arrayMaquinas.count
+        if pickerView == picker{
+            
+            return arrayMaquinas.count
+        }
+        
+        
+            
+            return terrenos.count
+        
+
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-       // tipo1 = tipos[row]
-        maquinaTextFIeld.text = arrayMaquinas[row]
-        self.view.endEditing(false)
+       
+        
+        if pickerView == picker{
+            
+            maquinaTextFIeld.text = arrayMaquinas[row]
+            self.view.endEditing(false)        }
+        
+        
+        if pickerView == picker2{
+            
+            terrenoTextField.text = terrenos[row]
+            self.view.endEditing(false)
+            
+            
+        }
+
         
     }
+    
+  
 
    
     
     
-     
+    
 
 }

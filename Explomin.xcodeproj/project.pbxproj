@@ -33,9 +33,22 @@
 		3C45FE771F7760FC00ABF457 /* ActividadesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE761F7760FC00ABF457 /* ActividadesCell.swift */; };
 		3C45FE791F77A79800ABF457 /* Accesorios VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE781F77A79800ABF457 /* Accesorios VC.swift */; };
 		3C45FE7B1F77A8B500ABF457 /* AccesorioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45FE7A1F77A8B500ABF457 /* AccesorioCell.swift */; };
+		3C7776E31F7E36450085FFCC /* AditSupervisorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7776E21F7E36440085FFCC /* AditSupervisorCell.swift */; };
 		3C7F9C981F7A43DA007164D6 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F9C971F7A43D9007164D6 /* TestVC.swift */; };
 		3C7F9C9B1F7A71DC007164D6 /* ClienteProAdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F9C9A1F7A71DC007164D6 /* ClienteProAdminVC.swift */; };
 		3C89E4B81F60A2A800011409 /* Admin3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89E4B71F60A2A800011409 /* Admin3ViewController.swift */; };
+		3CB88EF61F85130E0064E3C9 /* ClienteFormsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88EF51F85130E0064E3C9 /* ClienteFormsVC.swift */; };
+		3CB88EF81F851B820064E3C9 /* ClienteFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88EF71F851B810064E3C9 /* ClienteFormCell.swift */; };
+		3CB88EFA1F8529B00064E3C9 /* ClienteFormDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88EF91F8529AF0064E3C9 /* ClienteFormDetailVC.swift */; };
+		3CB88EFC1F855D4E0064E3C9 /* ActividadesClienteForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88EFB1F855D4E0064E3C9 /* ActividadesClienteForm.swift */; };
+		3CB88EFE1F856DFC0064E3C9 /* CliActCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88EFD1F856DFC0064E3C9 /* CliActCell.swift */; };
+		3CB88F001F8587250064E3C9 /* ClienteMaterialesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88EFF1F8587250064E3C9 /* ClienteMaterialesVC.swift */; };
+		3CB88F021F858A840064E3C9 /* ClienteMaterialesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88F011F858A840064E3C9 /* ClienteMaterialesCell.swift */; };
+		3CB88F041F858D110064E3C9 /* ClienteMuestrasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88F031F858D110064E3C9 /* ClienteMuestrasVC.swift */; };
+		3CB88F061F85922B0064E3C9 /* ClienteMuestraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88F051F85922B0064E3C9 /* ClienteMuestraCell.swift */; };
+		3CB88F081F8599970064E3C9 /* ClienteBrocasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88F071F8599970064E3C9 /* ClienteBrocasVC.swift */; };
+		3CB88F0A1F859B9D0064E3C9 /* ClienteBrocaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88F091F859B9D0064E3C9 /* ClienteBrocaCell.swift */; };
+		3CB88F0C1F85A56B0064E3C9 /* ClienteAditivoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB88F0B1F85A56A0064E3C9 /* ClienteAditivoVC.swift */; };
 		3CC4B0AC1F7956F00091605F /* SupervisorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4B0AB1F7956F00091605F /* SupervisorCell.swift */; };
 		3CC7A2661F5EAC3500E407E1 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A2651F5EAC3500E407E1 /* AdminViewController.swift */; };
 		3CC7A2681F5EAEE500E407E1 /* Admin2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A2671F5EAEE500E407E1 /* Admin2ViewController.swift */; };
@@ -46,7 +59,6 @@
 		3CCD48711F6D55BB000C7CEB /* Corrida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD48701F6D55BB000C7CEB /* Corrida.swift */; };
 		3CCD48731F6D5911000C7CEB /* CorridaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD48721F6D5911000C7CEB /* CorridaCell.swift */; };
 		3CCD48751F6DC66C000C7CEB /* AditivoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD48741F6DC66B000C7CEB /* AditivoViewController.swift */; };
-		3CD6E2BC1F6F3B3F007FAF05 /* Aditivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2BB1F6F3B3F007FAF05 /* Aditivo.swift */; };
 		3CD6E2BE1F6F82F8007FAF05 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2BD1F6F82F7007FAF05 /* Variables.swift */; };
 		3CD6E2C01F6FD8A9007FAF05 /* ListaPerforistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2BF1F6FD8A9007FAF05 /* ListaPerforistasViewController.swift */; };
 		3CD6E2C21F6FDBC3007FAF05 /* PerforistaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6E2C11F6FDBC3007FAF05 /* PerforistaCell.swift */; };
@@ -130,9 +142,22 @@
 		3C45FE761F7760FC00ABF457 /* ActividadesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActividadesCell.swift; sourceTree = "<group>"; };
 		3C45FE781F77A79800ABF457 /* Accesorios VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Accesorios VC.swift"; sourceTree = "<group>"; };
 		3C45FE7A1F77A8B500ABF457 /* AccesorioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccesorioCell.swift; sourceTree = "<group>"; };
+		3C7776E21F7E36440085FFCC /* AditSupervisorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AditSupervisorCell.swift; sourceTree = "<group>"; };
 		3C7F9C971F7A43D9007164D6 /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		3C7F9C9A1F7A71DC007164D6 /* ClienteProAdminVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteProAdminVC.swift; sourceTree = "<group>"; };
 		3C89E4B71F60A2A800011409 /* Admin3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admin3ViewController.swift; sourceTree = "<group>"; };
+		3CB88EF51F85130E0064E3C9 /* ClienteFormsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteFormsVC.swift; sourceTree = "<group>"; };
+		3CB88EF71F851B810064E3C9 /* ClienteFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteFormCell.swift; sourceTree = "<group>"; };
+		3CB88EF91F8529AF0064E3C9 /* ClienteFormDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteFormDetailVC.swift; sourceTree = "<group>"; };
+		3CB88EFB1F855D4E0064E3C9 /* ActividadesClienteForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActividadesClienteForm.swift; sourceTree = "<group>"; };
+		3CB88EFD1F856DFC0064E3C9 /* CliActCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CliActCell.swift; sourceTree = "<group>"; };
+		3CB88EFF1F8587250064E3C9 /* ClienteMaterialesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteMaterialesVC.swift; sourceTree = "<group>"; };
+		3CB88F011F858A840064E3C9 /* ClienteMaterialesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteMaterialesCell.swift; sourceTree = "<group>"; };
+		3CB88F031F858D110064E3C9 /* ClienteMuestrasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteMuestrasVC.swift; sourceTree = "<group>"; };
+		3CB88F051F85922B0064E3C9 /* ClienteMuestraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteMuestraCell.swift; sourceTree = "<group>"; };
+		3CB88F071F8599970064E3C9 /* ClienteBrocasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteBrocasVC.swift; sourceTree = "<group>"; };
+		3CB88F091F859B9D0064E3C9 /* ClienteBrocaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteBrocaCell.swift; sourceTree = "<group>"; };
+		3CB88F0B1F85A56A0064E3C9 /* ClienteAditivoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClienteAditivoVC.swift; sourceTree = "<group>"; };
 		3CC4B0AB1F7956F00091605F /* SupervisorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupervisorCell.swift; sourceTree = "<group>"; };
 		3CC7A2651F5EAC3500E407E1 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		3CC7A2671F5EAEE500E407E1 /* Admin2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admin2ViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +168,6 @@
 		3CCD48701F6D55BB000C7CEB /* Corrida.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Corrida.swift; sourceTree = "<group>"; };
 		3CCD48721F6D5911000C7CEB /* CorridaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorridaCell.swift; sourceTree = "<group>"; };
 		3CCD48741F6DC66B000C7CEB /* AditivoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AditivoViewController.swift; sourceTree = "<group>"; };
-		3CD6E2BB1F6F3B3F007FAF05 /* Aditivo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aditivo.swift; sourceTree = "<group>"; };
 		3CD6E2BD1F6F82F7007FAF05 /* Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		3CD6E2BF1F6FD8A9007FAF05 /* ListaPerforistasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPerforistasViewController.swift; sourceTree = "<group>"; };
 		3CD6E2C11F6FDBC3007FAF05 /* PerforistaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerforistaCell.swift; sourceTree = "<group>"; };
@@ -248,6 +272,12 @@
 				3CE04C2A1F78FC6A00327A2D /* AditivoCell.swift */,
 				3CC4B0AB1F7956F00091605F /* SupervisorCell.swift */,
 				3CE707EE1F7A820700D47872 /* ProyClienteCell.swift */,
+				3C7776E21F7E36440085FFCC /* AditSupervisorCell.swift */,
+				3CB88EF71F851B810064E3C9 /* ClienteFormCell.swift */,
+				3CB88EFD1F856DFC0064E3C9 /* CliActCell.swift */,
+				3CB88F011F858A840064E3C9 /* ClienteMaterialesCell.swift */,
+				3CB88F051F85922B0064E3C9 /* ClienteMuestraCell.swift */,
+				3CB88F091F859B9D0064E3C9 /* ClienteBrocaCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -257,6 +287,13 @@
 			children = (
 				3CD6E2CB1F724ADE007FAF05 /* ClienteViewController.swift */,
 				3C7F9C9A1F7A71DC007164D6 /* ClienteProAdminVC.swift */,
+				3CB88EF51F85130E0064E3C9 /* ClienteFormsVC.swift */,
+				3CB88EF91F8529AF0064E3C9 /* ClienteFormDetailVC.swift */,
+				3CB88EFB1F855D4E0064E3C9 /* ActividadesClienteForm.swift */,
+				3CB88EFF1F8587250064E3C9 /* ClienteMaterialesVC.swift */,
+				3CB88F031F858D110064E3C9 /* ClienteMuestrasVC.swift */,
+				3CB88F071F8599970064E3C9 /* ClienteBrocasVC.swift */,
+				3CB88F0B1F85A56A0064E3C9 /* ClienteAditivoVC.swift */,
 			);
 			name = Cliente;
 			sourceTree = "<group>";
@@ -280,7 +317,6 @@
 			children = (
 				3CCD486C1F6D46AD000C7CEB /* Broca.swift */,
 				3CCD48701F6D55BB000C7CEB /* Corrida.swift */,
-				3CD6E2BB1F6F3B3F007FAF05 /* Aditivo.swift */,
 				3CD6E2C71F711114007FAF05 /* Perforista.swift */,
 				3CD6E2D51F73385D007FAF05 /* Usuario.swift */,
 				3CD6E2DB1F738C25007FAF05 /* Proyecto.swift */,
@@ -727,19 +763,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB88EF81F851B820064E3C9 /* ClienteFormCell.swift in Sources */,
 				3CD6E2C61F701A1F007FAF05 /* ListaEquipoCell.swift in Sources */,
 				3CCD486A1F6D2F25000C7CEB /* BrocaViewController.swift in Sources */,
 				3CD6E2CA1F72484A007FAF05 /* SupervisorViewController.swift in Sources */,
+				3CB88EFC1F855D4E0064E3C9 /* ActividadesClienteForm.swift in Sources */,
 				3C3E2FB41F689F4900553329 /* AdminPop2ViewController.swift in Sources */,
 				3CE707EF1F7A820700D47872 /* ProyClienteCell.swift in Sources */,
 				3C18CC701F7A1F5F00400276 /* SupActividades.swift in Sources */,
+				3CB88EF61F85130E0064E3C9 /* ClienteFormsVC.swift in Sources */,
+				3CB88F021F858A840064E3C9 /* ClienteMaterialesCell.swift in Sources */,
 				3C3E2FBA1F691D3700553329 /* ModulesViewController.swift in Sources */,
+				3CB88F081F8599970064E3C9 /* ClienteBrocasVC.swift in Sources */,
 				3CE7BDF81F47923300F51B18 /* ViewController.swift in Sources */,
 				3C3E2FC81F6A616900553329 /* DatabaseService.swift in Sources */,
 				3CCD48711F6D55BB000C7CEB /* Corrida.swift in Sources */,
+				3CB88F061F85922B0064E3C9 /* ClienteMuestraCell.swift in Sources */,
 				3CD6E2BE1F6F82F8007FAF05 /* Variables.swift in Sources */,
 				3C18CC6C1F7A1F2B00400276 /* SupAditivos VC.swift in Sources */,
 				3CD6E2C41F701484007FAF05 /* ListaEquipoViewController.swift in Sources */,
+				3CB88F001F8587250064E3C9 /* ClienteMaterialesVC.swift in Sources */,
 				3CD6E2DC1F738C26007FAF05 /* Proyecto.swift in Sources */,
 				3C3E2FB61F68A9CB00553329 /* MyTableViewCell.swift in Sources */,
 				3CD6E2C81F711114007FAF05 /* Perforista.swift in Sources */,
@@ -748,6 +791,7 @@
 				3C3E2FBE1F69E09A00553329 /* LoginSupervisorViewController.swift in Sources */,
 				3C3E2FC61F6A2A6400553329 /* ProyectosTableViewCell.swift in Sources */,
 				3CC4B0AC1F7956F00091605F /* SupervisorCell.swift in Sources */,
+				3CB88F0C1F85A56B0064E3C9 /* ClienteAditivoVC.swift in Sources */,
 				3CE7BE2D1F4CF0EF00F51B18 /* LoginViewController.swift in Sources */,
 				3C18CC6E1F7A1F4800400276 /* SupMateriales VC.swift in Sources */,
 				3CCD486D1F6D46AD000C7CEB /* Broca.swift in Sources */,
@@ -775,23 +819,27 @@
 				3CD6E2D81F733CDA007FAF05 /* UsuarioCell.swift in Sources */,
 				3CD6E2E41F7499B6007FAF05 /* PerforistaVC.swift in Sources */,
 				3C3E2FCA1F6A6A3800553329 /* Proyecto1Cell.swift in Sources */,
+				3CB88F041F858D110064E3C9 /* ClienteMuestrasVC.swift in Sources */,
+				3CB88F0A1F859B9D0064E3C9 /* ClienteBrocaCell.swift in Sources */,
 				3CD6E2E21F746D53007FAF05 /* ProyectoAdmin.swift in Sources */,
 				3C45FE791F77A79800ABF457 /* Accesorios VC.swift in Sources */,
 				3C45FE751F7760C800ABF457 /* Actividades VC.swift in Sources */,
 				3C7F9C9B1F7A71DC007164D6 /* ClienteProAdminVC.swift in Sources */,
+				3C7776E31F7E36450085FFCC /* AditSupervisorCell.swift in Sources */,
 				3C18CC721F7A1F7100400276 /* SupMuestras VC.swift in Sources */,
+				3CB88EFE1F856DFC0064E3C9 /* CliActCell.swift in Sources */,
 				3C3E2FC01F69E0B900553329 /* LoginClienteViewController.swift in Sources */,
 				3CD6E2CC1F724ADE007FAF05 /* ClienteViewController.swift in Sources */,
 				3CD6E2D21F731922007FAF05 /* AdminMachVC.swift in Sources */,
 				3C3E2FB81F69125A00553329 /* My2TableViewCell.swift in Sources */,
 				3CCD486F1F6D4F0D000C7CEB /* MuestrasViewController.swift in Sources */,
+				3CB88EFA1F8529B00064E3C9 /* ClienteFormDetailVC.swift in Sources */,
 				3CD6E2DE1F738DC3007FAF05 /* ProyectoCell.swift in Sources */,
 				3CCD48671F6AF8CD000C7CEB /* ProyAdmSnapshot.swift in Sources */,
 				3CC7A2681F5EAEE500E407E1 /* Admin2ViewController.swift in Sources */,
 				3C45FE7B1F77A8B500ABF457 /* AccesorioCell.swift in Sources */,
 				3C45FE711F77461D00ABF457 /* MaterialCell.swift in Sources */,
 				3CCD48731F6D5911000C7CEB /* CorridaCell.swift in Sources */,
-				3CD6E2BC1F6F3B3F007FAF05 /* Aditivo.swift in Sources */,
 				3CD6E2D41F731946007FAF05 /* AdminProjVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

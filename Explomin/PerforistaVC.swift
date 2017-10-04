@@ -19,6 +19,7 @@ class PerforistaVC: UIViewController {
 
     @IBOutlet weak var nombreLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var proyecto: UIButton!
     
     
     
@@ -26,8 +27,22 @@ class PerforistaVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBar()
+        
+        proyecto.layer.cornerRadius = 10
+        proyecto.clipsToBounds = true
         
         
+    
+    }
+    
+    private func setupNavigationBar(){
+    
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
     
     }
     

@@ -18,6 +18,7 @@ class Accesorios_VC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var cantidadTextFIeld: UITextField!
     @IBOutlet weak var unidadesTextField: UITextField!
     
+    @IBOutlet weak var ok: UIButton!
     @IBOutlet weak var myTable: UITableView!
     
 
@@ -25,6 +26,8 @@ class Accesorios_VC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         super.viewDidLoad()
         
         arrayAccesorios = []
+        ok.layer.cornerRadius = 10
+        ok.clipsToBounds = true
     
     
     }

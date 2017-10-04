@@ -14,13 +14,29 @@ class LoginClienteViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-
-    self.passwordTextField.delegate = self
-    self.emailTextField.delegate = self
+  
+    @IBOutlet weak var enter: UIButton!
     
+    
+    override func viewDidLoad() {
+        
+        
+        super.viewDidLoad()
+        
+        
+        self.passwordTextField.delegate = self
+        self.emailTextField.delegate = self
+        
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        
+        
+        enter.layer.borderWidth = 1.5
+        enter.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        enter.layer.cornerRadius = cornerRadius
+
+        
     }
 
   

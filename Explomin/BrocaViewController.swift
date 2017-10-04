@@ -39,8 +39,22 @@ class BrocaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         picker.dataSource = self
         
         tipoTextField.inputView = picker
+        brocas = []
 
-        // Do any additional setup after loading the view.
+        setupNavigationBar()
+    
+    
+    }
+    
+    
+    private func setupNavigationBar(){
+        
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "explo"))
+        titleImageView.frame = CGRect(x:-57, y:0, width: 86, height: 30)
+        titleImageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = titleImageView
+        
     }
     
     @IBAction func addDrill(_ sender: Any) {

@@ -16,6 +16,7 @@ class LoginSupervisorViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var mailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var entrar: UIButton!
     
     
     override func viewDidLoad() {
@@ -23,6 +24,16 @@ class LoginSupervisorViewController: UIViewController, UITextFieldDelegate {
 
         self.mailTextField.delegate = self
         self.passwordTextField.delegate = self
+        
+        
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        
+        
+        entrar.layer.borderWidth = 1.5
+        entrar.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        entrar.layer.cornerRadius = cornerRadius
     
     }
 
